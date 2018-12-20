@@ -8,7 +8,6 @@ import {compose} from 'redux';
 class Dashboard extends Component {
 
     render() {
-        console.log(this.props)
         let projects = this.props.projects;
 
         return (

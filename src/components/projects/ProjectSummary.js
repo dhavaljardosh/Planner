@@ -1,7 +1,6 @@
 import React from 'react'
 
 const ProjectSummary = (props) => {
-    console.log(props)
     return (
             <div className="card  z-depth-0 project-summary" style={{marginBottom:0}}>
                 <div className="card-content grey-text text-darken-3">
