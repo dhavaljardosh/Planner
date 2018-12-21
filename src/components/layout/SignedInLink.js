@@ -5,6 +5,9 @@ import { signOut } from '../../store/actions/authActions'
 
 const SignedInLinks = (props) => {
 
+  const { initials } = props.profile;
+  console.log(props)
+
   return (
     <ul className="right">
       <li>
@@ -14,7 +17,7 @@ const SignedInLinks = (props) => {
         <a onClick={props.signOut} >Logout</a>
       </li>
       <li>
-        <NavLink to='/' className="btn btn-floating pink lighten-1">NN</NavLink>
+        <NavLink to='/' className="btn btn-floating pink lighten-1">{initials}</NavLink>
       </li>
     </ul>
   );
