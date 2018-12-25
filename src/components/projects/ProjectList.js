@@ -12,6 +12,7 @@ const ProjectList = ({projects}) => {
                     </Link>
                 )
             })}
+            {projects ? null: <p>NO PROJECTS TO DISPLAY</p>}
         </div>
     )
 }
